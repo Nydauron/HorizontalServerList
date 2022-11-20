@@ -1,7 +1,7 @@
 :root {
   --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
   --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
-  --server-container: calc(var(--server-size) + 20px);
+  --server-container: calc(var(--server-size) + 24px);
   --server-direction: var(--HSL-server-direction, column);
   --server-alignment: var(--HSL-server-alignment, flex-start);
 }
@@ -80,11 +80,12 @@
     }
 
     [class*="pill"] {
-      transform: rotate(90deg) translateY(-50%);
+      transform: translateX(50%) rotate(90deg);
       height: var(--server-size);
       width: 4px;
       top: calc(var(--server-size) / -1 + var(--server-size) / 2 - 8px) !important;
-      margin-left: -2px;
+      left: 50%;
+      margin-left: 0px;
       span {
         height: 100% !important;
         width: 4px !important;
@@ -143,7 +144,7 @@
       width: var(--server-size);
       left: 50%;
       border-radius: 10px;
-      transform: translateX(-50%);
+      transform: translateX(calc(-50% + 2px));
       height: 100%;
     }
 
