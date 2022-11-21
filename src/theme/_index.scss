@@ -28,6 +28,10 @@
     height: auto;
   }
 
+  .guilds-2JjMmN:hover [class*="pill"] {
+    top: calc(var(--server-size) / -1 + var(--server-size) / 2 - 9px) !important;
+  }
+
   .guilds-2JjMmN {
     transform-origin: top left;
     transform: rotate(-90deg);
@@ -83,12 +87,13 @@
       transform: translateX(50%) rotate(90deg);
       height: var(--server-size);
       width: 4px;
-      top: calc(var(--server-size) / -1 + var(--server-size) / 2 - 8px) !important;
+      top: calc(var(--server-size) / -1 + var(--server-size) / 2 - 12px) !important;
       left: 50%;
       margin-left: 0px;
+      transition: top 0.05s;
       span {
         height: 100% !important;
-        width: 4px !important;
+        width: 8px !important;
         transform: scale(0,1) !important;
         transition: 0.15s ease !important;
         margin-left: 0;
